@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    font-family: sans-serif;
+    color: #fefefe;
+  }
+  .container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+  }
+  
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+  }
+  .carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    
+    display: flex;
+  }
+  
+  span {
+    margin: auto;
+    font-size: 2rem;
+    color: #fefefe;
+    font-weight: bolder;
+  }
+  
+  
+  .carousel__face:nth-child(1) {
+    background-image: url("https://images.pexels.com/photos/962464/pexels-photo-962464.jpeg?cs=srgb&dl=pexels-godson-bright-962464.jpg&fm=jpg");
+    transform: rotateY(  0deg) translateZ(430px); }
+  .carousel__face:nth-child(2) { 
+    background-image: url("https://thumbs.dreamstime.com/b/green-tea-plantations-munnar-kerala-india-travel-background-panorama-tourist-attraction-65280815.jpg");
+      transform: rotateY( 40deg) translateZ(430px); }
+  .carousel__face:nth-child(3) {
+    background-image: url("https://e0.pxfuel.com/wallpapers/663/574/desktop-wallpaper-a-flavourful-journey-through-kerala-kerala-food.jpg");
+    transform: rotateY( 80deg) translateZ(430px); }
+  .carousel__face:nth-child(4) {
+    background-image: url("https://free4kwallpapers.com/uploads/originals/2015/07/16/kerala-nature-hd.jpg");
+    transform: rotateY(120deg) translateZ(430px); }
+  .carousel__face:nth-child(5) { 
+    background-image: url("https://images.pexels.com/photos/6544756/pexels-photo-6544756.jpeg?cs=srgb&dl=pexels-jaiju-jacob-6544756.jpg&fm=jpg");
+   transform: rotateY(160deg) translateZ(430px); }
+  .carousel__face:nth-child(6) { 
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c1/Chinese_Fishing_Nets_with_Blue_Cloudy_Sky_in_Background_at_Fort_Kochi%2C_Kerala%2C_India.jpg");
+   transform: rotateY(200deg) translateZ(430px); }
+  .carousel__face:nth-child(7) { 
+    background-image: url("https://images.pexels.com/photos/1415268/pexels-photo-1415268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+   transform: rotateY(240deg) translateZ(430px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("https://wallpapercave.com/wp/wp3320041.jpg");
+    transform: rotateY(280deg) translateZ(430px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/241/479/desktop-wallpaper-kerala-nature-rain-forest-the-best-kerala-nature.jpg");
+    transform: rotateY(320deg) translateZ(430px); }
+  
+  
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+  
